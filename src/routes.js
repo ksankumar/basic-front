@@ -28,14 +28,14 @@ const router = new VueRouter({
         },
         {
             path: "/products/create",
-            component: require('./components/product/Create.vue'),
+            component: require('./components/Shopping/product/Create.vue'),
             meta: {
                 forAuth: true
             }
         },
         {
             path: "/products/:product/edit",
-            component: require('./components/product/Edit.vue'),
+            component: require('./components/Shopping/product/Edit.vue'),
             meta: {
                 forAuth: true
             }
