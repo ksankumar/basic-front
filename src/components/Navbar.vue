@@ -22,7 +22,7 @@
                 </router-link>
             </ul>
         </nav>
-        <h3 class="text-muted">Project name</h3>
+        <h3 class="text-muted">Blog</h3>
     </div>
 </template>
 
