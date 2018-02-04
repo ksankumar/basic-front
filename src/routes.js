@@ -20,15 +20,29 @@ const router = new VueRouter({
             }
         },
         {
-            path: "/feed",
-            component: require('./components/Feed.vue'),
+            path: "/shopping",
+            component: require('./components/Shopping.vue'),
             meta: {
                 forAuth: true
             }
         },
         {
-            path: "/products/create",
+            path: "/shopping/products",
+            component: require('./components/Shopping/Products.vue'),
+            meta: {
+                forAuth: true
+            }
+        },
+        {
+            path: "/product/create",
             component: require('./components/Shopping/product/Create.vue'),
+            meta: {
+                forAuth: true
+            }
+        },
+        {
+            path: "/product/show",
+            component: require('./components/Shopping/product/Show.vue'),
             meta: {
                 forAuth: true
             }
