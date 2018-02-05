@@ -9,6 +9,7 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
+    "materialize-css": "^0.100.2",
     "sweetalert": "^2.1.0",
     "vee-validate": "^2.0.0-rc.27",
     "vue": "^2.1.0",
