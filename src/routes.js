@@ -28,28 +28,28 @@ const router = new VueRouter({
         },
         {
             path: "/shopping/products",
-            component: require('./components/Shopping/Products.vue'),
+            component: require('./components/Shopping/Product/Products.vue'),
             meta: {
                 forAuth: true
             }
         },
         {
-            path: "/product/create",
-            component: require('./components/Shopping/product/Create.vue'),
+            path: "/Product/create",
+            component: require('./components/Shopping/Product/Create.vue'),
             meta: {
                 forAuth: true
             }
         },
         {
-            path: "/product/show",
-            component: require('./components/Shopping/product/Show.vue'),
+            path: "/Product/show",
+            component: require('./components/Shopping/Product/Product.vue'),
             meta: {
                 forAuth: true
             }
         },
         {
-            path: "/products/:product/edit",
-            component: require('./components/Shopping/product/Edit.vue'),
+            path: "/products/:Product/edit",
+            component: require('./components/Shopping/Product/Edit.vue'),
             meta: {
                 forAuth: true
             }

@@ -17,7 +17,7 @@
 
                 <p v-if="product.user_id === authenticatedUser.id">
                     <a href="#" class="btn btn-danger" role="button"
-                       @click="$emit('delete-product')">
+                       @click="$emit('delete-Product')">
                         Delete
                     </a>
 

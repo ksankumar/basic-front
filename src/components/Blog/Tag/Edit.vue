@@ -52,7 +52,7 @@
             update() {
                 this.$http.put("api/products/" + this.$route.params.product, this.product)
                     .then(response => {
-                        swal("Updated!", "Your product has been updated!", "success")
+                        swal("Updated!", "Your Product has been updated!", "success")
                     })
             }
         }

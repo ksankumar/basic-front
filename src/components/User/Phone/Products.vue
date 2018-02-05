@@ -43,7 +43,7 @@
             deleteProduct(product) {
                 swal({
                     title: "Are you sure?",
-                    text: "Once deleted, you will not be able to recover this product!",
+                    text: "Once deleted, you will not be able to recover this Product!",
                     icon: "warning",
                     buttons: true,
                     dangerMode: true,
@@ -57,12 +57,12 @@
 
                                     this.products.splice(index, 1);
 
-                                    swal("Poof! Your product has been deleted!", {
+                                    swal("Poof! Your Product has been deleted!", {
                                         icon: "success",
                                     });
                                 });
                         } else {
-                            swal("Your product is safe!");
+                            swal("Your Product is safe!");
                         }
                     });
             }

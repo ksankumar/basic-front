@@ -7,7 +7,7 @@
 
 <script>
 
-    import Products from './Shopping/product/Products.vue'
+    import Products from './Shopping/Product/Products.vue'
 
     export default {
         components: {
