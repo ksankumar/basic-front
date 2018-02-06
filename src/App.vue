@@ -1,5 +1,5 @@
 <template>
-    <div class="container" id="app">
+    <div id="app">
         <navbar></navbar>
         <router-view></router-view>
     </div>
