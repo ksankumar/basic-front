@@ -4,12 +4,14 @@ import Router from './routes.js'
 import VueResource from 'vue-resource'
 import Auth from './packages/auth/Auth'
 import VeeValidate from 'vee-validate'
-import Mcss from 'materialize-css';
+import MaterializeJS from 'materialize-css';
+import MaterializeCSS from 'materialize-css/dist/css/materialize.min.css';
 
 Vue.use(VueResource);
 Vue.use(Auth);
 Vue.use(VeeValidate);
-Vue.use(Mcss);
+Vue.use(MaterializeJS);
+Vue.use(MaterializeCSS);
 
 Vue.http.options.root = 'http://localhost:8000';
 
@@ -49,3 +51,11 @@ new Vue({
     render: h => h(App),
     router: Router
 });
+
+(function ($) {
+    $(function () {
+
+        $('.button-collapse').sideNav();
+
+    }); // end of document ready
+})(jQuery); // end of jQuery name space
