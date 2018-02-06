@@ -6,6 +6,13 @@ Vue.use(VueRouter);
 const router = new VueRouter({
     routes: [
         {
+            path: "/",
+            component: require('./components/Index.vue'),
+            meta: {
+                forVisitors: true
+            }
+        },
+        {
             path: "/login",
             component: require('./components/authentication/Login.vue'),
             meta: {
@@ -22,6 +29,13 @@ const router = new VueRouter({
         {
             path: "/shopping",
             component: require('./components/Shopping.vue'),
+            meta: {
+                forAuth: true
+            }
+        },
+        {
+            path: "/home",
+            component: require('./components/Home.vue'),
             meta: {
                 forAuth: true
             }

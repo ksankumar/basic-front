@@ -1,14 +1,27 @@
 <template>
 
     <nav class="light-blue lighten-1" role="navigation">
-        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Learning App</a>
+        <div class="nav-wrapper container">
+            <router-link tag="li" to="/" v-if=" ! isAuth">
+                <a id="logo-container" class="brand-logo">
+                    Learning App
+                </a>
+            </router-link>
             <ul class="right hide-on-med-and-down">
                 <router-link tag="li" to="/login" v-if=" ! isAuth">
                     <a>Login</a>
                 </router-link>
-
                 <router-link tag="li" to="/register" v-if=" ! isAuth">
                     <a>Register</a>
+                </router-link>
+                <router-link tag="li" to="/blog" v-if=" ! isAuth">
+                    <a>Blog</a>
+                </router-link>
+                <router-link tag="li" to="/shop" v-if=" ! isAuth">
+                    <a>Shop</a>
+                </router-link>
+                <router-link tag="li" to="/home" v-if=" isAuth">
+                    <a>Home</a>
                 </router-link>
                 <router-link tag="li" to="/products/create" v-if=" isAuth">
                     <a>Add Product</a>
@@ -76,3 +89,4 @@
 <style>
 
 </style>
+
