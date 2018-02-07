@@ -4,14 +4,14 @@ import Router from './routes.js'
 import VueResource from 'vue-resource'
 import Auth from './packages/auth/Auth'
 import VeeValidate from 'vee-validate'
-import MaterializeJS from 'materialize-css';
-import MaterializeCSS from 'materialize-css/dist/css/materialize.min.css';
+import Vuetify from 'vuetify'
+import 'vuetify/dist/vuetify.min.css';
 
+
+Vue.use(Vuetify);
 Vue.use(VueResource);
 Vue.use(Auth);
 Vue.use(VeeValidate);
-Vue.use(MaterializeJS);
-Vue.use(MaterializeCSS);
 
 Vue.http.options.root = 'http://localhost:8000';
 
@@ -49,13 +49,11 @@ Router.beforeEach(
 new Vue({
     el: '#app',
     render: h => h(App),
-    router: Router
+    router: Router,
+
+    data() {
+        return {
+            title: 'Learning'
+        }
+    }
 });
-
-(function ($) {
-    $(function () {
-
-        $('.button-collapse').sideNav();
-
-    }); // end of document ready
-})(jQuery); // end of jQuery name space

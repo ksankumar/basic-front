@@ -27,8 +27,8 @@ const router = new VueRouter({
             }
         },
         {
-            path: "/shopping",
-            component: require('./components/Shopping.vue'),
+            path: "/shop",
+            component: require('./components/Shopping/Product/Products.vue'),
             meta: {
                 forAuth: true
             }
@@ -41,21 +41,14 @@ const router = new VueRouter({
             }
         },
         {
-            path: "/shopping/products",
-            component: require('./components/Shopping/Product/Products.vue'),
-            meta: {
-                forAuth: true
-            }
-        },
-        {
-            path: "/Product/create",
+            path: "/product/create",
             component: require('./components/Shopping/Product/Create.vue'),
             meta: {
                 forAuth: true
             }
         },
         {
-            path: "/Product/show",
+            path: "/product/show",
             component: require('./components/Shopping/Product/Product.vue'),
             meta: {
                 forAuth: true
